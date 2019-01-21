@@ -1,0 +1,36 @@
+//ѕроцюк
+
+/*2.	¬вести вес и рост человека.–ассчитать и вывести индекс массы тела(»ћ“) по формуле /kТI
+	=m/(h* h); где m Ч масса тела в килограммах, h Ч рост в метрах.
+
+
+
+*/
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("¬ведите ваш рост (см)\n>");
+            double Lenght = Convert.ToDouble(Console.ReadLine());
+            Console.Write("¬ведите ваш вес (кг)\n>");
+            double Mas = Convert.ToDouble(Console.ReadLine());
+
+            double imt = Mas / (Lenght * Lenght / 100 / 100);
+
+            Console.WriteLine("»ндекс массы: {0}  ", imt);
+            
+            Console.ReadKey();
+        }
+    }
+}
